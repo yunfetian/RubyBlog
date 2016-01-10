@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
-
-
+gem 'bootstrap-sass'
+gem "simple_form"
+gem "devise"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
@@ -43,5 +44,11 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  group :development do
+      gem 'capistrano', '~> 3.4'
+      gem 'capistrano-bundler', '~> 1.1', '>= 1.1.4'
+      gem 'capistrano-rails', '~> 1.1', '>= 1.1.5'
+      gem 'capistrano-rbenv', '~> 2.0', '>= 2.0.4'
+  end
 end
 
